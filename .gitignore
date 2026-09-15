@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.env
+.venv/
+backend/.env
+frontend/.env.local
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database / local app data
+*.db
+*.sqlite3
+backend/app.db
+backend/uploads/
+
+# Node / frontend
+node_modules/
+.next/
+out/
+.npm/
+
+# Build artifacts
+build/
+dist/
+coverage/
+
+# IDE / editor
+.vscode/
+.idea/
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Logs
+*.log
