@@ -9,17 +9,18 @@ class Settings(BaseSettings):
     secret_key: str = "change-me"
     admin_username: str = "admin"
     admin_password: str = "admin123"
+    # SQLite default for local; set DATABASE_URL to Supabase Postgres in production
+    # Example: postgresql://postgres.xxx:password@aws-0-xxx.pooler.supabase.com:6543/postgres
     database_url: str = "sqlite:///./app.db"
     ai_api_key: str = ""
     ai_model: str = "gemini-2.5-flash"
-    # Multi-provider humanizer keys (rotate across passes)
-    humanizer_api_key: str = ""          # backward-compat
-    humanizer_api_key_1: str = ""        # AIHumanizerAPI.com
-    humanizer_api_key_2: str = ""        # ToHuman
-    humanizer_api_key_3: str = ""        # Humanize AI Pro
-    humanizer_api_key_4: str = ""        # WriteHuman
-    humanizer_api_key_5: str = ""        # HumanizerAI.com
-    detector_api_key: str = ""           # ZeroGPT
+    humanizer_api_key: str = ""
+    humanizer_api_key_1: str = ""
+    humanizer_api_key_2: str = ""
+    humanizer_api_key_3: str = ""
+    humanizer_api_key_4: str = ""
+    humanizer_api_key_5: str = ""
+    detector_api_key: str = ""
     detector_provider: str = "zerogpt"
     humanizer_max_passes: int = 6
     target_ai_score: float = 5.0
